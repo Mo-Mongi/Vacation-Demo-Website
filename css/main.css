@@ -259,6 +259,16 @@ header .videoDiv iframe{
         right: 25px;
     }
 }
+@media (max-width: 500px) {
+    header .videoDiv iframe{
+        max-width: 100%;
+        left: 0;
+    }
+    .fa-circle-xmark{
+        top: 1%;
+        right: 25px;
+    }
+}
 .landing{
     text-align: center;
     margin-top: 150px;
