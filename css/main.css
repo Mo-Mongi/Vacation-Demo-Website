@@ -406,14 +406,18 @@ form.basic input[type= "submit"]{
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
+        max-width: 100%;
+        overflow: hidden;
     }
     form.basic .cont{
         width: 100%;
-        /* background-color: aquamarine; */
         margin-bottom: 30px;
     }
     form.basic input[type="submit"]{
         width: 100%;
+    }
+    .bread{
+        margin-bottom: 40px;
     }
 }
 /* ////////////////////////////////////////////// */
@@ -859,6 +863,7 @@ form.basic input[type= "submit"]{
     justify-content: center;
     margin: auto;
     margin-top: 40px;
+    max-width: 100%;
 }
 .f-nav a{
     display: flex;
