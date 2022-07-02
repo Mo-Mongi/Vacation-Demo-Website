@@ -33,9 +33,15 @@ function countDown(el){
 
 
 let myNav = document.querySelector('nav');
-let myH2 = document.querySelector('h1');
+let myH1 = document.querySelector('h1');
 
 window.onscroll = function(){
+    if(window.scrollY >= myH1.offsetTop){
+        myNav.classList.add("onscroll")
+    }else{
+        myNav.classList.remove("onscroll")
+    }
+    
     if(window.scrollY >= mySection.offsetTop){
         if(!started){
             myNums.forEach(function(num){
@@ -44,12 +50,6 @@ window.onscroll = function(){
         }
         started = true;
     }
-    if(window.scrollY >= myH2.offsetTop){
-        myNav.classList.add("onscroll")
-    }else{
-        myNav.classList.remove("onscroll")
-    }
-    
 }
 
 
